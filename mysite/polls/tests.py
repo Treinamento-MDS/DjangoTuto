@@ -1,10 +1,10 @@
 import datetime
-
+from django.test.utils import setup_test_environment
 from django.utils import timezone
 from django.test import TestCase
-
 from .models import Question
 
+setup_test_environment()
 
 class QuestionMethodTests(TestCase):
 
